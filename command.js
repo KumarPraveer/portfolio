@@ -7,7 +7,7 @@ let help = [
   "<br>",
   "help        -Help",
   "whois       -Who is Praveer?",
-  "projects    -View coing projects",
+  "projects    -View coding projects",
   "social      -Display social networks",
   "hobby       -Playing football",
   "funda       -funda of life",

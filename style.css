@@ -29,5 +29,10 @@ body {
 
 #messageContainer {
   animation: messageAni 2s linear ease-in-out;
+  padding: 1em;
 }
 
+#form {
+  padding-left: 1em;
+  padding-right: 1em;
+}

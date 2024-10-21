@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Praveer | Terminal</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="messageContainer"></div>
+
+    <form action="" id="form">
+      visitor@praveer:~$
+      <input class="cursor" type="text" id="cmd" autofocus autocomplete="off" />
+    </form>
+    <script>
+      const form = document.querySelector("#form");
+      const inputBox = document.querySelector("#cmd");
+      form.addEventListener("submit", (e) => {
+        e.preventDefault();
+        focus(inputBox);
+        const inputValue = inputBox.value;
+        command(inputValue);
+        inputBox.value = "";
+      });
+    </script>
+    <script src="command.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

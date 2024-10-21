@@ -1,0 +1,33 @@
+input {
+  outline: none;
+  border: none;
+  background-color: black;
+  caret-color: white;
+  color: #ffffff;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+body {
+  background-color: black;
+  color: #519975;
+  font-family: monospace;
+}
+
+.custom-cursor {
+  cursor: pointer; /* Change to pointer cursor */
+}
+
+.custom-cursor:focus {
+  border-color: #007bff; /* Change border color on focus */
+  cursor: text; /* Change cursor to text on focus */
+}
+
+#messageContainer {
+  animation: messageAni 2s linear ease-in-out;
+}
+
